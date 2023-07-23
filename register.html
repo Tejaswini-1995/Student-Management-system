@@ -1,0 +1,39 @@
+<html>
+    <head charset="UTF-8">
+        <title> register </title>
+        <link rel="stylesheet" href="../static/style.css">   
+    </head>
+    <body>
+        <div class="registercontent" align="center">
+            <div class="registertop">
+                <h1>Register</h1>
+
+            </div></br></br>
+            <div class="registerbottom">
+                <form action="{{ url_for('register')}}" method="post" autocomplete="off">
+                <div class="msg">{{ msg }}</div>
+                <input type="text" name="id"  class="textbox" id="id" required></br></br>
+                <input type="text" name="First Name" placeholder="First Name" class="textbox" id="First_Name" required></br></br>
+                <input type="text" name="Last Name" placeholder="Last_Name" class="textbox" id="Last_Name" required></br></br>
+                <input type="text" name="Mobile Number" placeholder="Mobile_Number" class="textbox" id="Mobile_Number" required></br></br>
+                <input type="text" name="Aadhar Card" placeholder="Aadhar_Card" class="textbox" id="Aadhar_Card" required></br></br>
+                <input type="text" name="DOB" placeholder="DOB" class="textbox" id="DOB" required></br></br>
+                <input type="text" name="email_Id" placeholder="email_Id" class="textbox" id="email_Id" required></br></br>
+                <input type="text" name="Gender" placeholder="Gender" class="textbox" id="Gender" required></br></br>
+                <input type="text" name="Address" placeholder="Address" class="textbox" id="Address" required></br></br>
+                <input type="text" name="city" placeholder="city" class="textbox" id="city" required></br></br>
+                <input type="text" name="pincode" placeholder="pincode" class="textbox" id="pincode" required></br></br>
+                <input type="text" name="state" placeholder="state" class="textbox" id="state" required></br></br>
+                <input type="text" name="country" placeholder="country" class="textbox" id="country" required></br></br>
+                <input type="text" name="Qualification" placeholder="Qualification" class="textbox" id="Qualification" required></br></br>
+                <input type="text" name="Course_Applied" placeholder="Course_Applied" class="textbox" id="Course_Applied" required></br></br>
+                <input type="text" name="username" placeholder="username" class="textbox" id="username" required></br></br>
+                <input type="text" name="password" placeholder="password" class="textbox" id="password" required></br></br>
+                <input type="submit" class="btn" value="Register">
+                </form>
+                <p class="worddark">Already have account? <a class="worddark" href="{{ url_for('login')}}">Login here</a></p>
+                </div>
+        </div>
+    </body>
+</html>
+
